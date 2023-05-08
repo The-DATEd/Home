@@ -1,0 +1,263 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+/* Common Classes */
+
+/* Containers */
+
+.container-padding {
+  padding: 7% 15%;
+}
+
+/* Headings */
+
+h1,h2,h3,h4,h5,h6 {  
+  font-family: "Montserrat-Bold";
+}
+
+.big-heading {
+  font-family: 'Roboto-300', sans-serif;
+  color: #100720;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.small-heading {
+  font-family: 'Roboto-300', sans-serif;
+  font-size: 1.5rem;
+  font-size: 3rem;
+}
+.standard-paragraph{
+  color: #748487;
+  font-family: 'Roboto-100', sans-serif;
+  text-align: justify;
+}
+
+.link-text{
+  font-family: 'Roboto-100', sans-serif;
+}
+
+/* Sections */
+
+.yellow-section{
+  background-color: #FFD24C;
+  color: #100720;
+}
+
+.black-section{
+  color:#F9F6EE;
+  background-color: #100720;
+
+}
+
+/* Title Section */
+
+#title {
+  background-color: #000;
+  color: #fff;
+  height: 0px;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0.5% 3% 0 0;
+  background-color: transparent; 
+  margin: 0px;
+  width:100%; 
+  position: fixed;
+  z-index: 1;  
+  }
+
+.navbar-brand {
+  height: 100px;
+}
+
+.header-logo{
+  margin: 0;
+  height: 60px;
+  padding-bottom: 0;
+}
+
+.navbar-brand:hover{
+  color:#FFD24C;
+}
+
+.nav-item {
+  padding: 10px 15px;
+  margin:auto;
+  
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  color: #100720;
+}
+
+.nav-link:hover{
+  color:#FFD24C;
+}
+
+/* India Map Section */
+
+.india-map{
+  background-image: url('India-Background.png');
+  background-size: cover;
+  margin: 0;
+  padding: 10% 0;
+  position: relative;
+  z-index: -1;
+  
+}
+
+.card{
+  background-color: #F9F6EE;
+  text-align: center;
+  margin: 100px 150px;
+  height: 500px;
+}
+
+.card-body{
+  margin: 0;
+  padding: 10;
+}
+
+.problem-image{
+  height: 180px;
+}
+
+/* Carousel Section */
+
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 95%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.carousel-image{
+  width: 100%;
+  height: 100%;
+}
+
+/* Carousel Section Transition*/
+
+.carousel-item {
+  transition: transform 0.5s ease;
+}
+
+.carousel-item.active {
+  transform: translateX(0);
+}
+
+.carousel-item.next,
+.carousel-item.prev {
+  transform: translateX(-100%);
+}
+
+.carousel-item.next.carousel-item-right,
+.carousel-item.prev.carousel-item-left {
+  transform: translateX(0);
+}
+
+.carousel-item:first-of-type.carousel-item-next {
+  transform: translateX(100%);
+}
+
+.carousel-item:last-of-type.carousel-item-prev {
+  transform: translateX(100%);
+}
+
+/* Features Section */
+
+#features {
+  position: relative;
+  z-index: -1;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+/* About-the-founders section */
+
+.about-the-founders{
+  height: 700px;  
+  position: relative;
+  z-index: -1;
+}
+
+.co-founder-image{
+  height: 350px;
+  padding-top: 5%;
+}
+
+
+/* CTA section */
+
+.cta-text{
+  padding: 7% 15%;
+  position: relative;
+  z-index: -1;
+}
+
+.cta-buttons{
+  padding-top: 5%;
+}
+
+/* Footer Section */
+
+.footer{
+  background-color: #EAE3D2;
+  padding: 80px 80px 20px;
+  position: relative;
+  z-index: -1;
+}
+
+.footer-logo{
+  width:100px;
+  height: 100px;
+
+}
+
+.social-icon {
+  margin: 20px 10px;
+  height: 25px;
+  width: 25px;
+}
+
+.link-opacity-50-hover{
+  padding: 40px;
+}
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+}
+
+
+.about-us-front{
+  width: 100%;
+  height: 100%;
+  background-color: #EAE3D2;
+}
